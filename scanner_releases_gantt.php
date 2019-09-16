@@ -78,12 +78,12 @@
         ]);
 
         var options = {
-          height: 500
+          height:100000,
         };
 
-        var chart2 = new google.visualization.Gantt(document.getElementById('chart_div'));
+        var chart = new google.visualization.Gantt(document.getElementById('chart_div'));
 
-        chart2.draw(data, options);
+        chart.draw(data, options);
       }
       //END OF drawChart()
       
@@ -101,7 +101,7 @@
 
           <h3 style = "color: #01B0F1;">Scanner -> System Releases Gantt</h3>
           <h3><img src="images/gantt.png" style="max-height: 35px;" />Releases Gantt Chart</h3>
-          <div id="chart_div"></div>
+          <div id="chart_div" style="max-height:500px; max-width:auto; overflow-x:scroll;"></div>
 
         
     </div>
